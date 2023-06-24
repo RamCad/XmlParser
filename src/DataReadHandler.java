@@ -50,7 +50,9 @@ public class DataReadHandler extends DefaultHandler {
 
   @Override
   public void endDocument() throws SAXException {
-
+    if(!elements.isEmpty()) {
+      DataWriteHandler.writeData(elements, idx);
+    }
   }
 
   @Override
