@@ -43,6 +43,7 @@ public class DataReadHandler extends DefaultHandler {
       elements.add(element);
       if(elements.size() == 500) {
         DataWriteHandler.writeData(elements, idx++);
+        elements.clear();
       }
     }
   }
