@@ -115,12 +115,4 @@ public class DataWriteHandler {
       e.printStackTrace();
     }
   }
-
-  public static void main(String[] args) {
-    int i = 1;
-    while (i < 3) {
-      writeData(new ArrayList<>(), i++);
-    }
-
-  }
 }
